@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Thinking</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px dashed blue;
+        }
+        .tun{
+            height: 500px;
+            border: 2px solid gray;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+        }
+        .box1,.box2{
+            width: 200px;
+            border: 2px dashed blue;
+        }
+        .tun1{
+            height: 500px;
+            border: 2px solid gray;
+            display: flex;
+            justify-content:stretch;
+        }
+        #box2{
+            flex-grow: 1;
+            order: 1;
+        }
+        #box1{
+            order: 2;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to think about Layout.</h1>
+    <section class="tun">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div>
+    </section>
+    <section class="tun1">
+        <div id="box1" class="box1">Box-1</div>
+        <div id="box2" class="box2">Box-2</div>
+    </section>
 </body>
 </html>

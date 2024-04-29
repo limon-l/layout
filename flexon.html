@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <script src="https://kit.fontawesome.com/9e275c6f55.js" crossorigin="anonymous"></script>
+    <style>
+        .login-field{
+            display: flex;
+            justify-content: center;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+        }
+        .login-form input,button{
+            font-size: 1.2em;
+            padding: 10px;
+            margin-top: 15px;
+            border: 2px solid lightgrey;
+            border-radius: 15px;
+            padding-left: 20px;
+        }
+        input:focus{
+            cursor: pointer;
+            border: 3px solid black;
+            font-weight: 400;
+        }
+        .btn:hover{
+            background-color: blue;
+            font-weight: 700;
+            color: aliceblue;
+            cursor: pointer;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        a{
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 1.8em;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <span>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">orders</a>
+            <a href="#">About Us</a>
+        </span>
+        <span>
+            <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+            <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+        </span>
+    </nav>
+    <section class="login-field">
+        <form class="login-form" action="">
+            <h2>LogIn</h2>
+            <input type="email" name="email" id="" placeholder="User email" required>
+            <input type="password" name="password" id="" placeholder="User password" required>
+            <button class="btn" type="submit">Submit</button>
+            <button class="btn" type="reset">Reset</button>
+        </form>
+    </section>
+</body>
+</html>
